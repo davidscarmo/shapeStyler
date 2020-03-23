@@ -1,0 +1,2 @@
+# shapeStyler
+Um gerador de formas (quadrado, quadrado com pontas arredondadas ou círculo). Onde o usuário passa os valores de largura, altura, espessura da borda, raio, cores das borda e do fundo da forma. São passado por meio de inputs de range e enquanto são alterados os ranges a forma é gerada na tela. Após escolher os atributos é possível gerar o css (que é automaticamente copiado pra área de transferências assim que gerado).  
