@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Styler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainGrid">
+    <div class="grid1">
+        <div class="inputArea">
+            <h2 id="shapeStyler">Shape Styler</h2>
+
+            <h2>Dimensão: </h2>
+            <label for="widthShape">Largura: </label> 
+            <input type="range" name="widthShape" id="widthShape" value="1" min="1" max="400" > 
+            <span id="widthValue"></span> <br>
+
+            <label for="heightShape">Altura: </label> 
+            <input type="range" name="heightShape" id="heightShape" value="1" min="1" max="400" > 
+            <span id="heightValue"></span> <br>
+
+            <h2>Cores de Fundo: </h2>
+            <label for="redBgShape" class="littleBox redBox"></label>
+            <input type="range" name="redBgShape" id="redBgShape" value="0" min="1" max="256">
+            <span id="redBgValue"></span> <br>
+
+            <label for="greenBgShape" class="littleBox greenBox"></label>
+            <input type="range" name="greenBgShape" id="greenBgShape" value="0" min="1" max="256">
+            <span id="greenBgValue"></span> <br>
+
+            <label for="blueBgShape" class="littleBox blueBox"></label>
+            <input type="range" name="blueBgShape" id="blueBgShape" value="0" min="1" max="256">
+            <span id="blueBgValue"></span> <br>
+
+            <h2>Borda:</h2>
+            <label for="thickness">Espessura: </label>
+            <input type="range" name="thickness" id="thickness" value="0" min="0" max="20">
+            <span id="thicknessValue"></span> <br>
+
+            <label for="radius">Raio: </label>
+            <input type="range" name="radius" id="radius" value="0" min="0" max="50">
+            <span id="radiusValue"></span> <br>
+
+            <h3>Cor</h3>
+            <label for="redBorder" class="littleBox redBox"></label>
+            <input type="range" name="redBorder" id="redBorder" value="0" min="1" max="256">
+            <span id="redBorderValue"></span> <br>
+
+            <label for="greenBorder" class="littleBox greenBox"></label>
+            <input type="range" name="greenBorder" id="greenBorder" value="0" min="1" max="256">
+            <span id="greenBorderValue"></span> <br>
+
+            <label for="blueBorder" class="littleBox blueBox"></label>
+            <input type="range" name="blueBorder" id="blueBorder" value="0" min="1" max="256">
+            <span id="blueBorderValue"></span> <br> <br>
+
+            <button id="getCssBtn" onclick="addCss()">Gerar CSS</button>
+        </div>
+            
+    </div>
+    <div class="grid2">
+        <h2>Forma</h2>
+        <div id="shape"></div>
+        
+        <h2>CSS</h2>
+        <textarea id="cssArea" rows="7" cols="50">
+            
+        </textarea>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

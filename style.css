@@ -1,0 +1,96 @@
+:root
+{
+    --w-shape: 100px;
+    --h-shape: 100px; 
+    --red-bg: 0; 
+    --green-bg: 0; 
+    --blue-bg: 0; 
+    --tkness: 1px; 
+    --radius-border: 0%;
+    --red-border: 0; 
+    --green-border: 0; 
+    --blue-border: 0; 
+}
+
+body
+{
+    color: white;
+    background-color: rgba(245, 245, 245, 0.842);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1,h2,h3{
+    color: rgb(52, 201, 52);
+}
+#shape 
+{
+    width: var(--w-shape);
+    height: var(--h-shape);
+    background: rgb(var(--red-bg), var(--green-bg), var(--blue-bg));
+    border: var(--tkness) solid rgb(var(--red-border), var(--green-border), var(--blue-border));
+    border-radius: var(--radius-border);
+}
+
+.littleBox
+{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.redBox
+{
+    background-color: red;
+}
+
+.greenBox
+{
+    background-color: green;
+}
+
+.blueBox 
+{
+    background-color: blue;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+  }
+
+  .grid1
+  {
+      padding: 1% 15%;
+  }
+
+ .grid2 h2
+ {
+     color: black;
+ }
+  .inputArea
+  {
+      width: 60%;
+      margin: 0 auto;
+      background-color: rgb(0, 0, 0);
+      padding-left: 5%;
+      padding-top: 0.2%;
+      padding-bottom: 4%;
+      
+  }
+  
+  #getCssBtn
+  {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: 30px;
+      color: black;
+      background-color: white;
+  }
+
+  #shapeStyler 
+  {
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+  }
